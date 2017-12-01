@@ -1,0 +1,8 @@
+gtd/__init__.py
+gtd/gtd.py
+gtd.egg-info/PKG-INFO
+gtd.egg-info/SOURCES.txt
+gtd.egg-info/dependency_links.txt
+gtd.egg-info/entry_points.txt
+gtd.egg-info/requires.txt
+gtd.egg-info/top_level.txt
