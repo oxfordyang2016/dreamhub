@@ -8,7 +8,7 @@ setup(
    packages=['gtd'],  #same as name
    install_requires=['requests','click'], #external packages as dependencies
        entry_points = {
-        'console_scripts': ['gtd=gtd.gtd:test'],
+        'console_scripts': ['gtd=gtd.gtd:task'],
     }
 
 
