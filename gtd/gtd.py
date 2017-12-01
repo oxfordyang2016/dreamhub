@@ -1,5 +1,7 @@
 import click
+from config import url
 import time
+import requests
 @click.command()
 #@click.option('--count', default=1, help='Number of greetings.')
 #this line is used to supply promt ask user to input
@@ -15,8 +17,13 @@ def task(inbox,tasktime,taskstatus):
     status = str(taskstatus)
     print(str(tasktime))
     print(inbox)
-
-
-
+    #upload-data = {'inbox':inboxthing,'input-time':inputtime,'task-status':status,'plantime':specifytasktime}
+    uploaddata = {'inbox':inboxthing,'input-time':inputtime,'task-status':status,'plantime':specifytasktime}
+    try:
+        r = requests.post(str(url)+'/gtd-cli', data =uploaddata )
+        print('server return info==>',r.json())
+    except BaseException as e::
+        print("upload fail,please resend later")
+        print("error info is ",str(e))
 def test():
     print("i am test the setup.py")

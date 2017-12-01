@@ -1,4 +1,5 @@
 gtd/__init__.py
+gtd/config.py
 gtd/gtd.py
 gtd.egg-info/PKG-INFO
 gtd.egg-info/SOURCES.txt
