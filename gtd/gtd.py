@@ -20,9 +20,9 @@ def task(inbox,tasktime,taskstatus):
     #upload-data = {'inbox':inboxthing,'input-time':inputtime,'task-status':status,'plantime':specifytasktime}
     uploaddata = {'inbox':inboxthing,'input-time':inputtime,'task-status':status,'plantime':specifytasktime}
     try:
-        r = requests.post(str(url)+'/gtd-cli', data =uploaddata )
-        print('server return info==>',r.json())
-    except BaseException as e::
+        r = requests.post(str(url)+'/gtdcli', data =uploaddata )
+        print('server return info==>',r.text)
+    except BaseException as e:
         print("upload fail,please resend later")
         print("error info is ",str(e))
 def test():

@@ -1,4 +1,4 @@
-url = "https://gtdofdream.herokuapp.com/gtd-cli"
+url = "https://gtdofdream.herokuapp.com"
 
 
 
